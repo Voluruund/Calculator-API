@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style/css.css" type="text/css">
+        <script src="javascript/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+    <body class="sfondo">
+        <center>
+            <select name="list" id="list" onchange=method()>
+                <option value="Javascript get">Javascript get</option>
+                <option value="Jquery get">Jquery get</option>
+                <option value="Javascript post">Javascript post</option>
+                <option value="Jquery post">Jquery post</option>
+            </select>
+        </center>
+        <div class="content">
+            <form name="datiCalc">
+                <input class="casellaTesto" name="casellaTesto" id="casellaTesto">
+            </form>
+            <table>
+                <tr>
+                    <td><input type="button" value="C" onclick="remove()"></td>
+                    <td><input type="button" value="0" onclick="insert('0')"></td>
+                    <td><input type="button" value="/" onclick="insert('/')"></td>
+                    <td><input type="button" value="*" onclick="insert('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="insert(1)"></td>
+                    <td><input type="button" value="2" onclick="insert(2)"></td>
+                    <td><input type="button" value="3" onclick="insert(3)"></td>
+                    <td><input type="button" value="+" onclick="insert('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="insert(4)"></td>
+                    <td><input type="button" value="5" onclick="insert(5)"></td>
+                    <td><input type="button" value="6" onclick="insert(6)"></td>
+                    <td><input type="button" value="-" onclick="insert('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="insert(7)"></td>
+                    <td><input type="button" value="8" onclick="insert(8)"></td>
+                    <td><input type="button" value="9" onclick="insert(9)"></td>
+                    <td><input type="button" value="=" onclick="execute()"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

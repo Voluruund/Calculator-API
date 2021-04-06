@@ -1,0 +1,78 @@
+.sfondo{
+    background: linear-gradient(to right, gray,lightgray);
+}
+
+.content{
+    width: 420px;
+    height: 420px;
+    background-color: lightgray;
+    border-radius: 10%;
+    border-color: gray;
+    border-style: solid;
+    position: absolute;                     /*position of the content*/
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.casellaTesto{
+    width: 392px;
+    height: 55px;
+    margin: auto;
+    padding-top: 2%;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 30px;
+    text-align: right;
+    background-color:white;
+    border: solid gray 2px;
+    border-radius: 8px;
+    outline: none;
+    color: #607d6b;
+}
+
+input[type="button"]{
+    width: 95px;
+    height: 75px;
+    font-size: 30px;
+    margin-left: 10%;
+    cursor: pointer;
+    background-color: #607d6b;
+    border: solid gray 2px;
+    border-radius: 8px;
+    text-align:center;
+    transition-duration: 0.3s;
+    outline: none;
+    color: white;
+}
+
+input[type="button"]:hover{
+  background-color:white; /* Green */
+  color: black;
+}
+
+.button:focus {
+    outline: none;
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* Remove default arrow */
+   background-image: url(...);   /* Add custom arrow */
+   border: none;
+   outline: none;
+   width: 150px;
+   height: 20px;
+   text-align: center;
+   font-weight: bold;
+   display: block;
+   text-indent: 30px;
+}
+
+select:hover{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
